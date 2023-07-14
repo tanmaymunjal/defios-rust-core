@@ -11,5 +11,5 @@ on:
 jobs:
   tests:
     name: anchor-buildx
-    uses: tanmaymunjal/anchor-ci@v0.2-beta-testing
+    uses: ./.github/actions/run-anchor-ci/
 
