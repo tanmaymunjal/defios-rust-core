@@ -3,18 +3,12 @@ name: Tests
 on:
   push:
     branches:
-      - master
+      - test-sample-action
   pull_request:
     branches:
-      - master
+      - test-sample-action
 
 jobs:
   tests:
-    name: Reusable
-    uses: ./.github/workflows/reusable_tests.yaml
-    with:
-      solana_cli_version: 1.14.20
-      node_version: 17.0.1
-      anchor_version: 0.28.0
-      python_version: 3.10.6
-      solana_rpc: localhost
+    name: anchor-buildx
+    uses: tanmaymunjal/anchor-ci@v0.1-beta-testing
