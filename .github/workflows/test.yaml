@@ -17,5 +17,5 @@ jobs:
         uses: actions/checkout@v2
 
       - name: Build and test anchor
-        uses: tanmaymunjal/anchor-ci@v0.3-beta-testing
+        uses: tanmaymunjal/anchor-ci@v0.4-beta-testing
 
