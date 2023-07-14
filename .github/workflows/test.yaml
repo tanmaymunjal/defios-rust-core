@@ -1,4 +1,4 @@
-name: Tests
+\name: Anchor BuildX
 
 on:
   push:
@@ -9,7 +9,12 @@ on:
       - test-sample-action
 
 jobs:
-  tests:
-    name: anchor-buildx
-    uses: ./.github/actions/run-anchor-ci/
+  build:
+    runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Build and test anchor
+        uses: tanmaymunjal/anchor-ci@v0.2-beta-testing
