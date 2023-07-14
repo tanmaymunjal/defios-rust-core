@@ -1,4 +1,4 @@
-\name: Anchor BuildX
+name: Anchor BuildX
 
 on:
   push:
