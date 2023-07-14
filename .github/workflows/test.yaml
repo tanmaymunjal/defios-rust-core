@@ -12,3 +12,4 @@ jobs:
   tests:
     name: anchor-buildx
     uses: tanmaymunjal/anchor-ci@v0.1-beta-testing
+
