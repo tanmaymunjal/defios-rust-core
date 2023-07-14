@@ -1,7 +1,0 @@
-name: "Runs anchor test"
-description: "Runs anchor test"
-runs:
-  using: "composite"
-  steps:
-    - name: anchor-buildx
-      uses: actions/tanmaymunjal/anchor-ci@v0.2-beta-testing
